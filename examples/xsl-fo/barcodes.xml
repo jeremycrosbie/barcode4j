@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<barcodes add-play-section="true">
+  <section title="Examples of all supported symbologies">
+    <barcode>
+      <description>Hello World! as Code 128</description>
+      <msg>Hello World!</msg>
+      <code128/>
+    </barcode>
+    <barcode>
+      <description>Interleaved 2 of 5</description>
+      <msg>0123456789</msg>
+      <intl2of5/>
+    </barcode>
+    <barcode>
+      <description>ITF-14</description>
+      <msg>15400141288763</msg>
+      <itf-14>
+        <module-width>0.5mm</module-width>
+        <height>20mm</height>
+        <bearer-bar-width>4mw</bearer-bar-width>
+        <quiet-zone enabled="true">10mw</quiet-zone>
+        <human-readable>
+          <font-size>8pt</font-size>
+          <pattern>_ __ _____ _____ _</pattern>
+        </human-readable>
+      </itf-14>
+    </barcode>
+    <barcode>
+      <description>Code 39</description>
+      <msg>0123456789</msg>
+      <code39/>
+    </barcode>
+    <barcode>
+      <description>Code 128</description>
+      <msg>0123456789</msg>
+      <code128/>
+    </barcode>
+    <barcode>
+      <description>EAN-128</description>
+      <msg>010123456789012&#xF0;100123456789&#xF1;15041220</msg>
+      <ean128>
+        <quiet-zone>1cm</quiet-zone>
+      </ean128>
+    </barcode>
+    <barcode>
+      <description>Codabar</description>
+      <msg>0123456789</msg>
+      <codabar/>
+    </barcode>
+    <barcode>
+      <description>UPC-A</description>
+      <msg>00123456789</msg>
+      <upc-a/>
+    </barcode>
+    <barcode>
+      <description>UPC-E</description>
+      <msg>0123413</msg>
+      <upc-e/>
+    </barcode>
+    <barcode>
+      <description>EAN-13 (with supplemental)</description>
+      <msg>200123456789+12</msg>
+      <ean-13/>
+    </barcode>
+    <barcode>
+      <description>EAN-8</description>
+      <msg>2012345</msg>
+      <ean-8/>
+    </barcode>
+    <barcode>
+      <description>POSTNET</description>
+      <msg>0123456789</msg>
+      <postnet/>
+    </barcode>
+    <barcode>
+      <description>Royal Mail Customer Barcode</description>
+      <msg>SN34RD1A</msg>
+      <royal-mail-cbc/>
+    </barcode>
+    <barcode>
+      <description>USPS Intelligent Mail Barcode (4-State Customer Barcode)</description>
+      <msg>01234567094987654321012345678</msg>
+      <usps4cb/>
+    </barcode>
+    <barcode>
+      <description>PDF417</description>
+      <msg>0123456789_ABC-abc</msg>
+      <pdf417/>
+    </barcode>
+    <barcode>
+      <description>DataMatrix</description>
+      <msg>123456</msg>
+      <datamatrix/>
+    </barcode>
+    <barcode>
+      <description>DataMatrix</description>
+      <msg>Barcode4J is cool!</msg>
+      <datamatrix/>
+    </barcode>
+    <barcode>
+      <description>DataMatrix</description>
+      <msg>Barcode4J is a flexible generator for barcodes written in Java. It's free, available under the Apache License, version 2.0.</msg>
+      <datamatrix/>
+    </barcode>
+  </section>
+  <section title="Real-life examples">
+    <barcode>
+      <description>The serial number of my USB 2.0 hub. (Code 128)</description>
+      <msg>O5-2C0272AD0126</msg>
+      <code128/>
+    </barcode>
+    <barcode>
+      <description>A book: Code Complete by Steve McConnell, ISBN&#160;1-55615-484-4 (EAN-13)</description>
+      <msg>978155615484</msg>
+      <ean13/>
+    </barcode>
+    <barcode>
+      <description>The german "Java Magazin" issue 4.03 (EAN-13 with supplemental)</description>
+      <msg>4194586705506+04</msg>
+      <ean13/>
+    </barcode>
+    <barcode>
+      <description>Nutella chocolate spread (EAN-8)</description>
+      <msg>80135463</msg>
+      <ean8/>
+    </barcode>
+    <barcode>
+      <description>Swiss Post: PostPac Priority marker (Code 128)</description>
+      <msg>0509</msg>
+      <code128 orientation="90">
+        <module-width>0.5mm</module-width>
+        <height>8mm</height>
+        <quiet-zone enabled="true">2mw</quiet-zone>
+        <human-readable>
+          <placement>none</placement>
+        </human-readable>
+      </code128>
+    </barcode>
+    <barcode>
+      <description>Swiss Post: PostPac tracking number (Code 128)</description>
+      <msg>990080530005275708</msg>
+      <code128>
+        <module-width>0.3mm</module-width>
+        <human-readable>
+          <pattern>__.__.______.________</pattern>
+        </human-readable>
+      </code128>
+    </barcode>
+    <barcode>
+      <description>The special reference symbol from ISO/IEC 16022:2000(E) (Annexe T.2) (DataMatrix)</description>
+      <msg>30Q324343430794&lt;OQQ</msg>
+      <datamatrix/>
+    </barcode>
+  </section>
+  <section title="Feature demonstrations">
+    <barcode>
+      <description>EAN-13 (default)</description>
+      <msg>200123456789</msg>
+      <ean-13/>
+    </barcode>
+    <barcode>
+      <description>EAN-13 (human-readable message on top)</description>
+      <msg>200123456789</msg>
+      <ean-13>
+        <human-readable>
+          <placement>top</placement>
+        </human-readable>
+      </ean-13>
+    </barcode>
+    <barcode>
+      <description>EAN-13 (no human-readable message)</description>
+      <msg>200123456789</msg>
+      <ean-13>
+        <human-readable>
+          <placement>none</placement>
+        </human-readable>
+      </ean-13>
+    </barcode>
+    <barcode>
+      <description>EAN-13 (height to 5mm)</description>
+      <msg>200123456789</msg>
+      <ean-13>
+        <height>5mm</height>
+      </ean-13>
+    </barcode>
+    <barcode>
+      <description>EAN-13 (without quiet zone)</description>
+      <msg>200123456789</msg>
+      <ean-13>
+        <quiet-zone enabled="false"/>
+      </ean-13>
+    </barcode>
+    <barcode>
+      <description>EAN-13 (with a bigger quiet zone)</description>
+      <msg>200123456789</msg>
+      <ean-13>
+        <quiet-zone>1cm</quiet-zone>
+      </ean-13>
+    </barcode>
+    <barcode>
+      <description>Ean 128 (with extention for USPS Confirmation Service. 
+      I do not realy know what this is good for but according to the specification 
+      it should be usable)</description>
+      <msg>42012345&#xF1;910112345678912345678&#xF0;</msg>
+      <ean128>
+              <quiet-zone>1cm</quiet-zone>
+              <template>(420)n5(91)n2+n9+n2-8+cd0</template>
+              <group-separator>&#xF1;</group-separator>
+              <check-digit-marker>&#xF0;</check-digit-marker>
+              <human-readable>
+	              <omit-brackets>true</omit-brackets>
+	          </human-readable>
+      </ean128>
+    </barcode>
+    <barcode>
+      <description>Code 39 (default)</description>
+      <msg>0123456789</msg>
+      <code39/>
+    </barcode>
+    <barcode>
+      <description>Code 39 (with start/stop characters displayed in the human-readable message, plus added check character)</description>
+      <msg>0123456789</msg>
+      <code39>
+        <checksum>add</checksum>
+        <human-readable>
+          <display-start-stop>true</display-start-stop>
+          <display-checksum>true</display-checksum>
+        </human-readable>
+      </code39>
+    </barcode>
+    <barcode>
+      <description>Code 39 (with a wide factor of 4)</description>
+      <msg>0123456789</msg>
+      <code39>
+        <wide-factor>4</wide-factor>
+      </code39>
+    </barcode>
+    <barcode>
+      <description>Code 39 (with a module-width of 0.4mm)</description>
+      <msg>0123456789</msg>
+      <code39>
+        <module-width>0.4mm</module-width>
+      </code39>
+    </barcode>
+    <barcode>
+      <description>Code 39 (with an interchar-gap-width of 8mw [8 times a module width])</description>
+      <msg>0123456789</msg>
+      <code39>
+        <interchar-gap-width>8mw</interchar-gap-width>
+      </code39>
+    </barcode>
+    <barcode>
+      <description>Code 39 (with the extended character set enabled)</description>
+      <msg>Hello *World*!</msg>
+      <code39>
+        <extended-charset>true</extended-charset>
+      </code39>
+    </barcode>
+    <barcode>
+      <description>Interleaved 2 of 5 (default)</description>
+      <msg>0123456789</msg>
+      <intl2of5/>
+    </barcode>
+    <barcode>
+      <description>Interleaved 2 of 5 (checksum mode: add)</description>
+      <msg>0123456789</msg>
+      <intl2of5>
+        <checksum>add</checksum>
+      </intl2of5>
+    </barcode>
+    <barcode>
+      <description>UPC-E (default)</description>
+      <msg>0425261</msg>
+      <upc-e/>
+    </barcode>
+    <barcode>
+      <description>UPC-E (the same as above but using a UPC-A message: 04210000526)</description>
+      <msg>04210000526</msg>
+      <upc-e/>
+    </barcode>
+    <barcode>
+      <description>UPC-E (with 2-character supplemental. Message: 04210000526+34)</description>
+      <msg>04210000526+34</msg>
+      <upc-e/>
+    </barcode>
+    <barcode>
+      <description>UPC-E (with 5-character supplemental. Message: 04210000526+56789)</description>
+      <msg>04210000526+56789</msg>
+      <upc-e/>
+    </barcode>
+    <barcode>
+      <description>Postnet (default)</description>
+      <msg>80122-2014-01</msg>
+      <postnet/>
+    </barcode>
+    <barcode>
+      <description>Postnet (baseline-alignment set to "top")</description>
+      <msg>80122-2014-01</msg>
+      <postnet>
+        <baseline-alignment>top</baseline-alignment>
+      </postnet>
+    </barcode>
+    <barcode>
+      <description>Postnet (playing with module-width, interchar-gap-width, tall-bar-height, short-bar-height and human-readable)</description>
+      <msg>80122-2014-01</msg>
+      <postnet>
+        <baseline-alignment>top</baseline-alignment>
+        <module-width>0.2mm</module-width>
+        <interchar-gap-width>1mm</interchar-gap-width>
+        <tall-bar-height>6mm</tall-bar-height>
+        <short-bar-height>3mm</short-bar-height>
+        <human-readable>
+          <placement>top</placement>
+        </human-readable>
+      </postnet>
+    </barcode>
+    <barcode>
+      <description>Royal Mail Customer Barcode (default)</description>
+      <msg>B31HQ1A</msg>
+      <royal-mail-cbc/>
+    </barcode>
+    <barcode>
+      <description>Royal Mail Customer Barcode (playing with interchar-gap-width, ascender-height, track-height)</description>
+      <msg>B31HQ1A</msg>
+      <royal-mail-cbc>
+        <interchar-gap-width>2mw</interchar-gap-width>
+        <ascender-height>2.16mm</ascender-height>
+        <track-height>1.02mm</track-height>
+      </royal-mail-cbc>
+    </barcode>
+  </section>
+  <section title="Character set demonstration">
+    <barcode>
+      <description>Interleaved 2 of 5: 0-9</description>
+      <msg>0123456789</msg>
+      <intl2of5/>
+    </barcode>
+    <barcode>
+      <description>Code 39: 0-9, [space] and "-.$/+%"</description>
+      <msg>0123456789 -.$/+%</msg>
+      <code39/>
+    </barcode>
+    <barcode>
+      <description>Code 39: A-Z</description>
+      <msg>ABCDEFGHIJKLMNOPQRSTUVWXYZ</msg>
+      <code39/>
+    </barcode>
+    <barcode>
+      <description>Code 128: 0-9</description>
+      <msg>0123456789</msg>
+      <code128/>
+    </barcode>
+    <barcode>
+      <description>Code 128: A-Z</description>
+      <msg>ABCDEFGHIJKLMNOPQRSTUVWXYZ</msg>
+      <code128/>
+    </barcode>
+    <barcode>
+      <description>Code 128: a-z</description>
+      <msg>abcdefghijklmnopqrstuvwxyz</msg>
+      <code128/>
+    </barcode>
+    <barcode>
+      <description>Codabar: 0-9 and "+-/$.:"</description>
+      <msg>0123456789+-/$.:</msg>
+      <codabar/>
+    </barcode>
+    <barcode>
+      <description>UPC-A: 0-9 (11 characters, checksum will be calculated)</description>
+      <msg>00123456789</msg>
+      <upc-a/>
+    </barcode>
+    <barcode>
+      <description>EAN-13: 0-9 (12 characters, checksum will be calculated)</description>
+      <msg>200123456789</msg>
+      <ean-13/>
+    </barcode>
+    <barcode>
+      <description>Postnet (dash is a valid character but won't be painted)</description>
+      <msg>01234-56789</msg>
+      <postnet>
+        <human-readable>
+          <placement>bottom</placement>
+        </human-readable>
+      </postnet>
+    </barcode>
+    <barcode>
+      <description>Royal Mail Customer Barcode: 0-9 and A-Z (parentheses and brackets are valid but will be filtered and automatically used as start/stop characters)</description>
+      <msg>0123456789</msg>
+      <royal-mail-cbc/>
+    </barcode>
+  </section>
+</barcodes>
